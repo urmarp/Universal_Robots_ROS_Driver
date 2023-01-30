@@ -44,6 +44,7 @@
   <depend>ur_client_library</depend>
   <depend>ur_dashboard_msgs</depend>
   <depend>ur_msgs</depend>
+  <depend>freedrive_controller</depend>
 
   <exec_depend>cartesian_trajectory_controller</exec_depend>
   <exec_depend>controller_stopper</exec_depend>

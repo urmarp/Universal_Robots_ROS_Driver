@@ -1,0 +1,11 @@
+<library path="lib/libfreedrive_controller">
+
+  <class name="freedrive_controller/FreedriveController"
+         type="freedrive_controller::FreedriveController"
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+      The FreedriveController implements a freedrive controller.
+    </description>
+  </class>
+
+</library>

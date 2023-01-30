@@ -59,6 +59,7 @@
 
 #include <speed_scaling_interface/speed_scaling_interface.h>
 #include <scaled_joint_trajectory_controller/scaled_joint_command_interface.h>
+#include <freedrive_controller/freedrive_interface.h>
 
 #include <ur_client_library/ur/ur_driver.h>
 #include <ur_robot_driver/dashboard_client_ros.h>

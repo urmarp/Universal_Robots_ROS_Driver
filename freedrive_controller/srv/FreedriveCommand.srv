@@ -1,0 +1,4 @@
+# command = 1 if freedrive mode is to be started and -1 if it should be stopped
+int8 command
+---
+bool success

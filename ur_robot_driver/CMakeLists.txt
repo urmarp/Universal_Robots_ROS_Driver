@@ -28,6 +28,7 @@ find_package(catkin REQUIRED
     tf2_msgs
     trajectory_msgs
     ur_dashboard_msgs
+    freedrive_controller
     ur_msgs
     pass_through_controllers
     kdl_parser
@@ -61,6 +62,7 @@ catkin_package(
     tf2_msgs
     trajectory_msgs
     ur_dashboard_msgs
+    freedrive_controller
     ur_msgs
   DEPENDS
     Boost
@@ -95,7 +97,7 @@ add_executable(ur_robot_driver_node
   src/hardware_interface.cpp
   src/hardware_interface_node.cpp
 )
-target_link_libraries(ur_robot_driver_node ${catkin_LIBRARIES} ur_client_library::urcl urcl_log_handler)
+target_link_libraries(ur_robot_driver_node ${catkin_LIBRARIES} ur_client_library::urcl urcl_log_handler freedrive_controller)
 add_dependencies(ur_robot_driver_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 add_executable(dashboard_client
